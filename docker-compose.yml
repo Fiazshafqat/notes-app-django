@@ -3,7 +3,7 @@ version: "3.8"
 services:
   nginx:
     build: ./nginx
-    image: notes-nginx:latest
+    image: fiazsh/django_nginx:latest
     container_name: "nginx_cont"
     ports:
       - "80:80"
@@ -16,7 +16,7 @@ services:
   django_app:
     build:
       context: .
-    image: notes-app:latest
+    image: fiazsh/django_app:latest
     container_name: "django_cont"
     ports:
       - "8000:8000"
