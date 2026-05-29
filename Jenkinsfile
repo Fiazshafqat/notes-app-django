@@ -37,7 +37,6 @@ pipeline {
             /opt/sonar-scanner/bin/sonar-scanner \
             -Dsonar.projectKey=notes-app \
             -Dsonar.sources=. \
-            -Dsonar.exclusions=data/**,**/*.sqlite3,**/*.db,**/*.ibd,**/mysql/** \
             -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.login=$SONAR_AUTH_TOKEN
             '''
