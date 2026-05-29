@@ -1,6 +1,6 @@
 # Base Image
 FROM python:3.9
-
+# Set Working Directory
 WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
